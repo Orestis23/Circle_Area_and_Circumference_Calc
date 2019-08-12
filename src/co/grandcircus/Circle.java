@@ -2,20 +2,14 @@ package co.grandcircus;
 
 public class Circle {
 	private double rad;
-	//private double circ;
 
 	public Circle(double radius) {
 		this.rad = radius;
-
 	}
-	
-	
 
 	public double getRad() {
 		return rad;
 	}
-
-
 
 	public void setRad(double rad) {
 		this.rad = rad;
@@ -23,7 +17,6 @@ public class Circle {
 
 	public double getCircumference() {
 		return (Math.PI * 2) * rad;
-
 	}
 
 	public double getArea() {
@@ -31,7 +24,7 @@ public class Circle {
 		return area;
 	}
 
-	private String formatNumber(double x) {
+	private static String formatNumber(double x) {
 		return String.format("%.2f", x);
 	}
 
@@ -40,7 +33,8 @@ public class Circle {
 	}
 
 	public String getFormattedArea() {
-		return null;
+		return formatNumber(getArea());
+
 	}
-	
+
 }
